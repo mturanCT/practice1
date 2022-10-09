@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SignUpTest {
@@ -36,19 +37,14 @@ public class SignUpTest {
         Thread.sleep(500);
         submitButton.click();
 
-
-
-      //Alert alert = driver.switchTo().alert();
-
-
-        //WebElement appBanner = driver.findElement(By.xpath("//i[@class=\"v-icon notranslate mdi mdi-close theme--light\"]"));
-
-
-       // appBanner.click();
+      //
       Thread.sleep(500);
 
-        WebElement discoverPage = driver.findElement(By.linkText("/home"));
-        discoverPage.click();
+      WebElement discoverPage = driver.findElement(By.linkText("/home"));discoverPage.click();
+
+      String actualURL = driver.getTitle();
+      String expectedURL = "";
+      Assert.assertEquals(actualURL, expectedURL);
 
 
 
