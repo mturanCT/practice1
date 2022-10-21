@@ -8,21 +8,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleTranslateSteps {
 
-    WebDriver driver = new ChromeDriver();
-   // GoogleTranslatePage signUp = new GoogleTranslatePage(driver);
-
-    @When("The user navigate to LTK home page")
-    public void the_user_navigate_to_ltk_home_page() {
+    @When("The user navigate to Google translate home page")
+    public void the_user_navigate_to_google_translate_home_page() {
 
     }
-    @Then("the user create username and password")
-    public void the_user_create_username_and_password() {
+    @Then("the user selects source language")
+    public void the_user_selects_source_language() {
 
     }
-    @Then("The user navigates to Discover page")
-    public void the_user_navigates_to_discover_page() {
+    @Then("The user selects translation language")
+    public void the_user_selects_translation_language() {
 
     }
+
 
 
 }

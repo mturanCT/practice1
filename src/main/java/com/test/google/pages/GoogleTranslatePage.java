@@ -1,7 +1,9 @@
 package com.test.google.pages;
 
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +14,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 
-public class GoogleTranslatePage {
+public class GoogleTranslatePage  {
+
+
 
 
     public void Translator() throws InterruptedException {
@@ -38,7 +42,13 @@ public class GoogleTranslatePage {
         Thread.sleep(500);
         italian.click();
 
+        WebElement swapLanguages = driver.findElement(By.xpath("//*[@id=\"ow27\"]/div/span/button/div[3]"));
+        swapLanguages.click();
+        WebElement swapItalian = driver.findElement(By.xpath("//*[@id=\"c8\"]/span[3]"));
+        WebElement swapEnglish= driver.findElement(By.xpath("//*[@id=\"i12\"]/span[3]"));
 
+        Assert.assertTrue(swapEnglish.isDisplayed());
+        //Assert.assertTrue(swapItalian.isDisplayed());
 
     }
 }
