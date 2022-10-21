@@ -38,5 +38,7 @@ public class GoogleTranslatePage {
         Thread.sleep(500);
         italian.click();
 
+
+
     }
 }
