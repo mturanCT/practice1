@@ -1,10 +1,7 @@
-package LtkSteps;
+package GoogleTranslatorSteps;
 
-import com.test.google.pages.GoogleTranslatePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleTranslateSteps {
 
