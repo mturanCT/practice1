@@ -1,15 +1,15 @@
 package LtkSteps;
 
-import com.test.ltk.pages.SignUpPage;
+import com.test.google.pages.GoogleTranslatePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LtkSignUpSteps {
+public class GoogleTranslateSteps {
 
     WebDriver driver = new ChromeDriver();
-    SignUpPage signUp = new SignUpPage(driver);
+   // GoogleTranslatePage signUp = new GoogleTranslatePage(driver);
 
     @When("The user navigate to LTK home page")
     public void the_user_navigate_to_ltk_home_page() {
