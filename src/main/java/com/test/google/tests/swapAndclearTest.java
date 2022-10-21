@@ -10,7 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class swapClearTest {
+public class swapAndclearTest {
+
 
 
 
